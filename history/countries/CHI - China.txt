@@ -1,0 +1,96 @@
+﻿capital = 613 # Nanjing
+
+recruit_character = ROC_Mao_Zedong
+recruit_character = ROC_Jiang_ZhongZheng
+recruit_character = ROC_Pu_Yi
+recruit_character = ROC_Zhang_Lan
+recruit_character = ROC_Chen_Cheng
+recruit_character = ROC_Chen_Geng
+recruit_character = ROC_Chen_Guofu
+recruit_character = ROC_Chen_Yi
+recruit_character = ROC_Chen_Yi_2
+recruit_character = ROC_Dai_Anlan
+recruit_character = ROC_Deng_Xiaoping
+recruit_character = ROC_Dong_Biwu
+recruit_character = ROC_Du_Yuming
+recruit_character = ROC_Fu_Zuoyi
+recruit_character = ROC_Gao_Zhihang
+recruit_character = ROC_Gu_Zhutong
+recruit_character = ROC_He_Yingqin
+recruit_character = ROC_Hu_Zongnan
+recruit_character = ROC_Jiang_Jingguo
+recruit_character = ROC_Kong_Xiangxi
+recruit_character = ROC_Lin_Sen
+recruit_character = ROC_Liu_Bocheng
+recruit_character = ROC_Liu_Shaoqi
+recruit_character = ROC_Li_De
+recruit_character = ROC_Li_Zongren
+recruit_character = ROC_Peng_Dehuai
+recruit_character = ROC_Song_Meiling
+recruit_character = ROC_Sun_Liren
+recruit_character = ROC_Su_Yu
+recruit_character = ROC_Wang_Shuming
+recruit_character = ROC_Wang_Yaowu
+recruit_character = ROC_Wei_Lihuang
+recruit_character = ROC_Xi_Qia
+recruit_character = ROC_Xue_Yue
+recruit_character = ROC_Xu_Xiangqian
+recruit_character = ROC_Yan_Xishan
+recruit_character = ROC_Yu_Hanmou
+recruit_character = ROC_Zhang_Haipeng
+recruit_character = ROC_Zhang_Jinghui
+recruit_character = ROC_Zhang_Xueliang
+recruit_character = ROC_Zhou_Enlai
+recruit_character = ROC_Zhu_De
+recruit_character = ROC_Lin_Biao
+recruit_character = ROC_Long_Yun
+recruit_character = ROC_Ma_Bufang
+recruit_character = ROC_Sheng_Shicai
+
+set_stability = 1.0
+set_war_support = 1.0
+# Starting tech
+
+add_ideas = {
+	german_advisors
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	add_ideas = {
+		CHI_communist_uprisings
+	}
+}
+
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}		
+	add_ideas = {
+		CHI_nine_power_treaty
+		CHI_army_corruption_1
+		CHI_ineffective_bureaucracy
+		CHI_incompetent_officers
+		free_trade
+		CHI_hyper_inflation_1
+	}
+}
+save_global_event_target_as = WTT_current_china_leader
+
+set_convoys = 0
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	communism = 100
+}

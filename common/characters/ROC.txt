@@ -1,0 +1,941 @@
+characters = {
+	# 毛泽东
+	ROC_Mao_Zedong={
+		name=PRC_mao_zedong
+		portraits={
+			army={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=marxism
+			traits={ cornered_fox }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	# 蒋中正
+	ROC_Jiang_ZhongZheng={
+		name=CHI_chiang_kaishek
+		portraits={
+			civilian={
+				large=GFX_portrait_CHI_chiang_kaishek
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ generallissimo }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	# 溥仪
+	ROC_Pu_Yi={
+		name=MAN_aisin_gioro_puyi
+		portraits={
+			civilian={
+				large=GFX_portrait_MAN_aisin_gioro_puyi
+			}
+		}
+		country_leader={
+			ideology=rexism
+			traits={ warrior_code }
+			expire="1960.1.1.1"
+			id=-1
+		}
+	}
+	# 张澜
+	ROC_Zhang_Lan={
+		name="张澜"
+		portraits={
+			civilian={
+				large="GFX_portrait_prc_zhang_lan"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	# 陈诚
+	ROC_Chen_Cheng={
+		name=CHI_chen_cheng
+		portraits={
+			army={
+				small="GFX_idea_CHI_chen_cheng"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CHI_chen_cheng
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+		}
+	}
+	# 陈赓
+	ROC_Chen_Geng={
+		name=PRC_chen_geng
+		portraits={
+			army={
+				small="GFX_idea_PRC_chen_geng"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_chen_geng
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			cost = 100
+		}
+	}
+	# 陈果夫
+	ROC_Chen_Guofu={
+		name=CHI_chen_guofu
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_chen_guofu"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_chen_guofu
+			allowed  = {
+				original_tag  = CHI
+				has_dlc = "Waking the Tiger"
+			}
+			traits  = {
+				backroom_backstabber 
+			}
+		}
+	}
+	# 陈毅
+	ROC_Chen_Yi={
+		name=PRC_chen_yi
+		portraits={
+			army={
+				large="GFX_portrait_prc_chen_yi"
+				small=GFX_portrait_PRC_chen_yi_small
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = PRC_chen_yi
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+		}
+
+		field_marshal={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 陈仪
+	ROC_Chen_Yi_2={
+		name=CHI_chen_yi
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_chen_yi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_chen_yi
+			allowed  = {
+				original_tag  = CHI
+			}
+			traits  = {
+				compassionate_gentleman 
+			}
+		}
+	}
+	# 戴安澜
+	ROC_Dai_Anlan={
+		name=CHI_tai_anlan
+		portraits={
+			army={
+				large="GFX_portrait_chi_tai_an_lan"
+				small="GFX_idea_CHI_tai_an_lan"
+			}
+		}
+		field_marshal={
+			traits={ career_officer trait_reckless offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	# 董必武
+	ROC_Dong_Biwu={
+		name=PRC_dong_biwu
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_dong_biwu"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_dong_biwu
+			allowed  = {
+				original_tag  = CHI
+				has_dlc = "Waking the Tiger"
+			}
+			traits  = {
+				communist_revolutionary 
+			}
+		}
+	}
+	# 杜聿明
+	ROC_Du_Yuming={
+		name=CHI_tu_yuming
+		portraits={
+			army={
+				large="GFX_portrait_chi_du_yuming"
+				small="GFX_idea_CHI_du_yuming"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious harsh_leader armor_officer defensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	# 傅作义
+	ROC_Fu_Zuoyi={
+		name=CHI_fu_zuoyi
+		portraits={
+			army={
+				large="GFX_portrait_chi_fu_zuoyi"
+				small="GFX_idea_CHI_fu_zuoyi"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 高志航
+	ROC_Gao_Zhihang={
+		name=CHI_gao_zhihang
+		portraits={
+			army={
+				small="GFX_idea_CHI_gao_zihang"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CHI_gao_zhihang
+			ledger = air
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				air_air_superiority_3
+			}
+			cost = 200
+		}
+	}
+	# 顾祝同
+	ROC_Gu_Zhutong={
+		name=CHI_gu_zhutong
+		portraits={
+			army={
+				large="GFX_portrait_chi_gu_zhutong"
+				small="GFX_idea_CHI_gu_zhutong"
+			}
+		}
+		field_marshal={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 何应钦
+	ROC_He_Yingqin={
+		name=CHI_he_yingqin
+		portraits={
+			army={
+				small="GFX_idea_CHI_he_yingqin"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_he_yingqin
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+		}
+	}
+	# 胡宗南
+	ROC_Hu_Zongnan={
+		name=CHI_hu_zongnan
+		portraits={
+			army={
+				large="GFX_portrait_chi_hu_zongnan"
+				small="GFX_idea_CHI_hu_zongnan"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	# 蒋经国
+	ROC_Jiang_Jingguo={
+		name=CHI_chiang_ching_kuo
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_chiang_ching_kuo"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_chiang_ching_kuo
+			allowed  = {
+				original_tag  = CHI
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+	}
+	# 孔祥熙
+	ROC_Kong_Xiangxi={
+		name = CHI_h_h_kung
+		portraits = {
+			civilian = {
+				small = "GFX_idea_CHI_h_h_kung"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_h_h_kung
+			allowed  = {
+				original_tag  = CHI
+			}
+			traits  = {
+				captain_of_industry 
+			}
+		}
+	}
+	# 林森
+	ROC_Lin_Sen={
+		name=CHI_lin_sen
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_lin_sen"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_lin_sen
+			allowed  = {
+				original_tag  = CHI
+				has_dlc = "Waking the Tiger"
+			}
+			traits  = {
+				popular_figurehead 
+			}
+		}
+	}
+	# 刘伯承
+	ROC_Liu_Bocheng={
+		name=PRC_liu_bocheng
+		portraits={
+			army={
+				small="GFX_idea_PRC_liu_bocheng"
+			}
+		}
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_liu_bocheng
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+
+			traits = {
+				military_theorist
+			}
+		}
+	}
+	# 刘少奇
+	ROC_Liu_Shaoqi={
+		name=PRC_liu_shaoqi
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_liu_shaoqi"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_liu_shaoqi
+			allowed  = {
+				original_tag  = CHI
+			}
+			traits  = {
+				communist_revolutionary 
+			}
+		}
+	}
+	# 李德
+	ROC_Li_De={
+		name=PRC_otto_braun
+		portraits={
+			army={
+				small="GFX_idea_PRC_otto_braun"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_otto_braun
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_old_guard
+			}
+		}
+	}
+	# 李宗仁
+	ROC_Li_Zongren={
+		name = CHI_li_zongren
+		portraits={
+			civilian={
+				large=GFX_portrait_GXC_li_zongren
+			}
+			army={
+				large="GFX_portrait_li_zongren"
+				small="GFX_idea_CHI_li_zongren"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CHI_li_zongren
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			cost = 200
+		}
+		
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 彭德怀
+	ROC_Peng_Dehuai={
+		name=PRC_peng_dehuai
+		portraits={
+			army={
+				large="GFX_portrait_prc_peng_dehuai"
+				small=GFX_portrait_PRC_peng_dehuai_small
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 宋美龄	
+	ROC_Song_Meiling={
+		name=CHI_soong_mei_ling
+		portraits={
+			civilian={
+				small="GFX_idea_CHI_soong_mei_ling"
+			}
+		}
+		gender = female
+		advisor={
+			slot = political_advisor
+			idea_token = CHI_soong_mei_ling
+			allowed  = {
+				original_tag  = CHI
+				has_dlc = "Waking the Tiger"
+			}
+			traits  = {
+				first_lady 
+			}
+		}
+	}
+	# 孙立人
+	ROC_Sun_Liren={
+		name=CHI_sun_li_jen
+		portraits={
+			army={
+				large="GFX_portrait_chi_sun_li_jen"
+				small="GFX_idea_CHI_sun_li_jen"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 粟裕
+	ROC_Su_Yu={
+		name=PRC_su_yu
+		portraits={
+			army={
+				small="GFX_idea_PRC_su_yu"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_su_yu
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_reform_2
+			}
+			cost = 100
+		}
+	}
+	# 王叔铭
+	ROC_Wang_Shuming={
+		name=CHI_wang_shuming
+		portraits={
+			army={
+				small="GFX_idea_CHI_wang_shuming"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CHI_wang_shuming
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.500
+			}
+		}
+	}
+	# 王耀武
+	ROC_Wang_Yaowu={
+		name=CHI_wang_yaowu
+		portraits={
+			army={
+				large="GFX_portrait_chi_wang_yaowu"
+				small="GFX_idea_CHI_wang_yaowu"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious infantry_officer defensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 卫立煌
+	ROC_Wei_Lihuang={
+		name=CHI_wei_lihuang
+		portraits={
+			army={
+				large="GFX_portrait_chi_wei_lihuang"
+				small="GFX_idea_CHI_wei_lihuang"
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 熙恰
+	ROC_Xi_Qia={
+		name=MAN_aisin_gioro_xiqia
+		portraits={
+			army={
+				large="GFX_portrait_man_aisin_gioro_xiqia"
+				small="GFX_idea_MAN_aisin_gioro_xiqia"
+			}
+		}
+		field_marshal={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	# 薛岳
+	ROC_Xue_Yue={
+		name=CHI_hsueh_yueh
+		portraits={
+			army={
+				large="GFX_portrait_chi_xue_yue"
+				small="GFX_idea_CHI_xue_yue"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_reckless war_hero offensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	# 徐向前
+	ROC_Xu_Xiangqian={
+		name=PRC_xu_xiangqian
+		portraits={
+			army={
+				small="GFX_idea_PRC_xu_xiangqian"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = PRC_xu_xiangqian
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	# 阎锡山
+	ROC_Yan_Xishan={
+		name=SHX_yan_xishan
+		portraits={
+			civilian={
+				large="GFX_portrait_yan_xishan"
+			}
+			army={
+				small=GFX_portrait_SHX_yan_xishan_small
+				large="GFX_portrait_yan_xishan"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SHX_yan_xishan
+			allowed = {
+				original_tag = SHX
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			cost = 100
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 余汉谋
+	ROC_Yu_Hanmou={
+		name=CHI_yu_hanmou
+		portraits={
+			army={
+				small="GFX_idea_CHI_yu_hanmou"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CHI_yu_hanmou
+			ledger = army
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+		}
+	}
+	# 张海鹏
+	ROC_Zhang_Haipeng={
+		name=MAN_zhang_haipeng
+		portraits={
+			army={
+				large="GFX_portrait_man_zhang_haipeng"
+				small="GFX_idea_MAN_zhang_haipeng"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 张景惠
+	ROC_Zhang_Jinghui={
+		name=MAN_zhang_jinghui
+		portraits={
+			army={
+				large="GFX_portrait_man_zhang_jinghui"
+				small="GFX_idea_MAN_zhang_jinghui"
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 张学良
+	ROC_Zhang_Xueliang={
+		name=CHI_zhang_xueliang
+		portraits={
+			army={
+				large="GFX_portrait_chi_zhang_xueliang"
+				small="GFX_idea_CHI_zhang_xueliang"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 周恩来
+	ROC_Zhou_Enlai={
+		name=PRC_zhou_enlai
+		portraits={
+			civilian={
+				small="GFX_idea_PRC_zhou_enlai"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_zhou_enlai
+			allowed  = {
+				original_tag  = CHI
+			}
+			traits  = {
+				communist_revolutionary 
+			}
+		}
+	}
+	# 朱德
+	ROC_Zhu_De={
+		name=PRC_zhu_de
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhu_de"
+				small="GFX_idea_PRC_zhu_de"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = PRC_zhu_de
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				army_chief_morale_3
+			}
+			cost = 100
+		}
+		
+		field_marshal={
+			traits={ infantry_officer organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	# 林彪
+	ROC_Lin_Biao={
+		name=PRC_lin_biao
+		portraits={
+			army={
+				large=GFX_portrait_PRC_lin_biao
+				small=GFX_portrait_PRC_lin_biao_small
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer trait_mountaineer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	# 龙云
+	ROC_Long_Yun={
+		name=YUN_long_yun
+		portraits={
+			civilian={
+				large="GFX_portrait_yun_long_yun"
+			}
+			army = {
+				small=GFX_portrait_YUN_long_yun_small
+				large="GFX_portrait_yun_long_yun"
+			}
+		}
+
+		field_marshal={
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	# 马步芳
+	ROC_Ma_Bufang={
+		name=XSM_ma_bufang
+		portraits={
+			civilian={
+				large="GFX_portrait_xsm_ma_bufang"
+			}
+			army={
+				large="GFX_portrait_xsm_ma_bufang"
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	# 盛世才
+	ROC_Sheng_Shicai={
+		name=SIK_sheng_shicai
+		portraits={
+			civilian={
+				large=GFX_portrait_SIK_sheng_shicai
+			}
+			army={
+				large="GFX_portrait_sheng_shicai"
+				small=GFX_portrait_SIK_sheng_shicai_small
+
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}
